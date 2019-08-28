@@ -8,8 +8,36 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Firebase BA Kitchen Recipes</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <div class="container my-5">
+      <h2>Recipes</h2>
+      <ul>
+        <li>Recipe1</li>
+        <li>Recipe2</li>
+        <li>Recipe3</li>
+      </ul>
+      <form>
+        <label for="recipe">Add a new recipe:</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="recipe" required />
+          <div class="input-group-append">
+            <input
+              type="sumbit"
+              value="add"
+              class="btn btn-outline-secondary"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-firestore.js"></script>
